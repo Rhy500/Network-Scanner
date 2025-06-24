@@ -26,5 +26,7 @@ This is a Final Project for the **Computer Networks** course, featuring a simple
 -----
 ## output project
 ![output](picture/output0.pgn)
-![output](picture/output1.pgn)
+!(picture/output1.pgn)
+
+#### Febriyanti Rahayu
 
