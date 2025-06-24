@@ -1,40 +1,30 @@
- Fitur Utama
-Ping Sweep (ICMP Echo Request)
-Melakukan pemindaian jaringan untuk mendeteksi host yang aktif pada subnet tertentu menggunakan protokol ICMP. Hasilnya adalah daftar alamat IP yang merespons ping.
+#  Network Scanner - Ping Sweep & TCP SYN Scanner
 
-TCP Port Scan (SYN Scan)
-Melakukan pemindaian port TCP untuk mengecek port terbuka pada sebuah host dengan menggunakan metode TCP SYN (half-open scan), mirip dengan teknik yang digunakan nmap.
+This is a Final Project for the **Computer Networks** course, featuring a simple Python-based network scanning tool. The program offers two main features: **Ping Sweep (ICMP Echo Request)** and **TCP SYN Port Scanning**, presented through an interactive terminal-based menu.
 
-🚀 Cara Menjalankan
-Aktifkan virtual environment (opsional tapi disarankan):
+---
 
-bash
-Copy
-Edit
-.venv\Scripts\activate
-Jalankan program:
+##  Features
 
-bash
-Copy
-Edit
-python scanning.py
-Ikuti petunjuk menu interaktif.
+### 1. Ping Sweep (ICMP)
+- Scans all hosts within a given subnet (e.g., `192.168.1.0/24`)
+- Sends ICMP Echo Requests to detect active hosts
+- Displays a list of reachable (alive) IPs
 
-⚠️ Hak Akses
-Program ini memerlukan akses root/admin untuk mengirimkan paket ICMP dan TCP mentah. Jalankan dengan Run as Administrator (Windows) atau sudo (Linux/Mac) jika diperlukan.
+### 2. TCP SYN Port Scan
+- Scans for open TCP ports on a target IP using the TCP SYN (half-open) scanning technique
+- Supports scanning a single port or a range (e.g., `80` or `1-100`)
 
-🛠️ Dependensi
-scapy
+---
+##  Installation & Setup
+<pre><code>pip install scapy</code></pre>
 
-ipaddress
+----
+## Running the Program
+<pre><code>python net_scanning.py</code></pre>
 
-concurrent.futures (builtin)
+-----
+## output project
+![output](picture/output0.pgn)
+![output](picture/output1.pgn)
 
-socket, subprocess, datetime (builtin)
-
-Instalasi dependensi:
-
-bash
-Copy
-Edit
-pip install scapy
